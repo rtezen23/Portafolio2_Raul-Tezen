@@ -237,37 +237,47 @@ h3{
 }
 
 /* PORTAFOLIO */
-
 .portafolio{
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
+    width:90%;
+    padding:2em;
+    margin: auto;
 }
 
-.portafolio>div:nth-child(2){
-    align-self: flex-end;
+.portafolio-elementos{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+    gap: 4em;
 }
 
 .portafolio-contenedor{
-    width: 40%;
+    min-height: 10vh;
+    width: 50%;
     background-color: #ef9919;
-    height: 350px;
     text-align: center;
+    
 }
 
-.portafolio-contenedor>img{
-    width: 90%;
+.portafolio-elementos>:nth-child(2){
+    align-self: flex-end;
+}
+
+.portafolio-contenedor>*{
     position: relative;
-    top: 50px;
-}
-
-.portafolio-contenedor>p{
+    top: 30px;
     color: #fff;
-    position: relative;
-    top: 50px;
-    text-align: left;
 }
+
+.portafolio-contenedor img{
+    width: 90%;
+}
+
+.portafolio-puntos{
+    display: none;
+}
+
 
 /* CONTACTO */
 
@@ -320,11 +330,11 @@ footer>p{
         top: 0;
         right: 0;        /* en 0 para verlo, -250 para ocultarlo para hacer que entre al darle click al menu-icon */
         transform: translateX(100%);
-        background-color: #fff;
+        background-color: #242635;
         width: 300px;
         height: 100vh;
-        z-index: 2;
-        
+        z-index: 100;
+        padding-left: 30px;
     }
 
     nav>ul{
@@ -346,9 +356,9 @@ footer>p{
         left: 0;
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(255, 255, 255, .5);
         display: none; /* ocultamos para hacer el menu-icon */
-        z-index: 1;
+        z-index: 10;
     }
 
     #btn_menu{
@@ -509,6 +519,48 @@ footer>p{
 
     /* PORTAFOLIO - SLIDER */
 
+    .portafolio{
+        width:90%;
+        max-width: 120em;
+        padding:2em;
+        overflow: hidden;
+    }
+    .portafolio-elementos{
+        width: 300%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding:2em;
+        transition: all .5s ease;
+        transform: translateX(0%);
+    }
+    .portafolio-contenedor{
+        width: calc( 100% / 3  - 2em);
+        min-height: 10vh;
+    }
+
+    .portafolio-puntos{
+        width:100%;
+        margin:1em 0 0;
+        padding:.4em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .portafolio-puntos .punto{
+        width:  2em;
+        height: 2em;
+        margin: 1em 1em 0;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    .portafolio-puntos .activo{
+        background-color: #ef9919;
+    }
 
     /* CONTACTO */
     footer>h3{

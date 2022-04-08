@@ -14,17 +14,17 @@
 </head>
 
 <body>
-    <div class="general">
+    <div class="general" id="home">
         <i class="fa-solid fa-bars" id="btn_menu"></i>
         <div id="back_menu"></div>
         <nav id="nav">
             <ul>
-                <li><a href="index.html" class="actual">Home</a> </li>
-                <li><a href="">Acerca de mí</a> </li>
-                <li><a href="">Experiencia</a> </li>
-                <li><a href="">Mis habilidades</a> </li>
-                <li><a href="">Mi portafolio</a> </li>
-                <li><a href="">Contacto</a> </li>
+                <li><a href="#home" class="actual">Home</a> </li>
+                <li><a href="#aboutMe">Acerca de mí</a> </li>
+                <li><a href="#experiencia">Experiencia</a> </li>
+                <li><a href="#habilidades">Mis habilidades</a> </li>
+                <li><a href="#portafolio">Mi portafolio</a> </li>
+                <li><a href="#contacto">Contacto</a> </li>
             </ul>
         </nav>
 
@@ -53,7 +53,7 @@
             </div>
         </section>
 
-        <section class="sobreMi">
+        <section class="sobreMi" id="aboutMe">
             <h3>Acerca de mí</h3>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium molestias culpa eligendi id officia!
@@ -79,7 +79,7 @@
         </section>
 
         <!-- EXPERIENCIA -->
-        <h3 class="exp-h3">Experiencia</h3>
+        <h3 class="exp-h3" id="experiencia">Experiencia</h3>
         <div class="experiencia">
            <div class="experiencia-container1">
 
@@ -121,7 +121,7 @@
 
          <!-- HABILIDADES -->
 
-        <div class="habilidades">
+        <div class="habilidades" id="habilidades">
             <img src="Vectores/Rectangle 34-1.svg" alt="">
             <h3>Mis habilidades</h3>
             <div class="habilidades-info">
@@ -143,28 +143,36 @@
 
         <br><br>
         <!-- PORTAFOLIO -->
-        <h3 class="exp-h3">Mi portafolio</h3>
-
+        <h3 class="exp-h3" id="portafolio">Mi portafolio</h3>
         <div class="portafolio">
-            <div class="portafolio-contenedor">
-                <img src="Logos-Imágenes/image 9-1.jpg" alt="">
-                <p>Ecommerce Skincare</p>
+            <div class="portafolio-elementos">
+                <div class="portafolio-contenedor">
+                    <img src="Logos-Imágenes/image 9-1.jpg" alt="">
+                    <p>Ecommerce Skincare</p>
+                </div>
+                <div class="portafolio-contenedor">
+                    <img src="Logos-Imágenes/image 10.jpg" alt="">
+                    <p>Training at home app</p>
+                </div>
+                <div class="portafolio-contenedor">
+                    <img src="Logos-Imágenes/image 11.jpg" alt="">
+                    <p>Personal writer</p>
+                </div>
             </div>
-            <div class="portafolio-contenedor">
-                <img src="Logos-Imágenes/image 10.jpg" alt="">
-                <p>Training at home app</p>
-            </div>
-            <div class="portafolio-contenedor">
-                <img src="Logos-Imágenes/image 11.jpg" alt="">
-                <p>Personal writer</p>
-            </div>
+            
+            <ul class="portafolio-puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+
         </div>
-    
+            
         <br><br>
         <!-- FOOTER -->
 
         <footer>
-            <h3>Contacto</h3>
+            <h3 id="contacto">Contacto</h3>
 
             <div class="contacto">
                 <div class="contacto__celular">
