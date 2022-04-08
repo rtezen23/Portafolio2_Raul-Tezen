@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2526d54b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="general">
-        <nav>
+        <i class="fa-solid fa-bars" id="btn_menu"></i>
+        <div id="back_menu"></div>
+        <nav id="nav">
             <ul>
                 <li><a href="index.html" class="actual">Home</a> </li>
                 <li><a href="">Acerca de mí</a> </li>
@@ -27,7 +30,7 @@
 
         <section class="encabezado">
             <div class="encabezado-info">
-                <h1>Raúl Tezén F.</h1>
+                <h1>Raúl Tezén</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </p>
@@ -116,72 +119,69 @@
            </div> 
         </div>
 
-    <!-- HABILIDADES -->
+         <!-- HABILIDADES -->
 
-    <div class="habilidades">
-        <img src="Vectores/Rectangle 34-1.svg" alt="">
-        <h3>Mis habilidades</h3>
-        <div class="habilidades-info">
-            <div class="habilidades-info__porcentaje">
-                <p>95%</p>
-                <p>70%</p>
-                <p>90%</p>
-                <p>90%</p>
+        <div class="habilidades">
+            <img src="Vectores/Rectangle 34-1.svg" alt="">
+            <h3>Mis habilidades</h3>
+            <div class="habilidades-info">
+                <div class="habilidades-info__porcentaje">
+                    <p>95%</p>
+                    <p>70%</p>
+                    <p>90%</p>
+                    <p>90%</p>
+                </div>
+
+                <div class="habilidades-info__nombre">
+                    <p>Mobile app design</p>
+                    <p>Motion Design</p>
+                    <p>Creación y mantenimiento de sistemas de diseño</p>
+                    <p>Gestión de proyectos</p>
+                </div>
             </div>
+        </div>
 
-            <div class="habilidades-info__nombre">
-                <p>Mobile app design</p>
-                <p>Motion Design</p>
-                <p>Creación y mantenimiento de sistemas de diseño</p>
-                <p>Gestión de proyectos</p>
+        <br><br>
+        <!-- PORTAFOLIO -->
+        <h3 class="exp-h3">Mi portafolio</h3>
+
+        <div class="portafolio">
+            <div class="portafolio-contenedor">
+                <img src="Logos-Imágenes/image 9-1.jpg" alt="">
+                <p>Ecommerce Skincare</p>
+            </div>
+            <div class="portafolio-contenedor">
+                <img src="Logos-Imágenes/image 10.jpg" alt="">
+                <p>Training at home app</p>
+            </div>
+            <div class="portafolio-contenedor">
+                <img src="Logos-Imágenes/image 11.jpg" alt="">
+                <p>Personal writer</p>
             </div>
         </div>
-    </div>
-
-    <br><br>
-    <!-- PORTAFOLIO -->
-    <h3 class="exp-h3">Mi portafolio</h3>
-
-    <div class="portafolio">
-        <div class="portafolio-contenedor">
-            <img src="Logos-Imágenes/image 9-1.jpg" alt="">
-            <p>Ecommerce Skincare</p>
-        </div>
-        <div class="portafolio-contenedor">
-            <img src="Logos-Imágenes/image 10.jpg" alt="">
-            <p>Training at home app</p>
-        </div>
-        <div class="portafolio-contenedor">
-            <img src="Logos-Imágenes/image 11.jpg" alt="">
-            <p>Personal writer</p>
-        </div>
-    </div>
     
-    <br><br>
-    <!-- FOOTER -->
+        <br><br>
+        <!-- FOOTER -->
 
-    <footer>
-        <h3>Contacto</h3>
+        <footer>
+            <h3>Contacto</h3>
 
-        <div class="contacto">
-            <div class="contacto__celular">
-                    <img src="iconos/phone 3.svg" alt="">
-                <p>Número celular</p>
-                <span>987654321</span>
+            <div class="contacto">
+                <div class="contacto__celular">
+                        <img src="iconos/phone 3.svg" alt="">
+                    <p>Número celular</p>
+                    <span>987654321</span>
+                </div>
+                <div class="contacto__correo">
+                        <img src="iconos/mail 3.svg" alt="">
+                    <p>Correo electrónico</p>
+                    <span>raul.tezen.98@gmail.com</span>
+                </div>
             </div>
-            <div class="contacto__correo">
-                    <img src="iconos/mail 3.svg" alt="">
-                <p>Correo electrónico</p>
-                <span>raul.tezen.98@gmail.com</span>
-            </div>
-        </div>
-        <p> Hecho con ❤ en Academlo</p>
-</footer>
+            <p> Hecho con ❤ en Academlo</p>
+         </footer>
     
-
-    
-
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>

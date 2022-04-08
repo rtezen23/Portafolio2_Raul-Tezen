@@ -9,7 +9,7 @@ html{
 }
 
 .general{
-    width: 70%;
+    width: 100%;
     margin: auto;
     background-color: #1f1d2c;
     height: 100%;
@@ -17,6 +17,10 @@ html{
 }
 
 /* NAV */
+
+#btn_menu{
+    display: none;
+}
 
 nav{
     padding-top: 40px;
@@ -302,4 +306,234 @@ footer>p{
     color: #fff;
     text-align: center;
     padding: 50px;
+}
+
+
+/* RESPONSIVE 600PX */
+
+@media screen and (max-width:600px) {
+    nav{
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 0; /* le quitamos el padding right que le pusimos antes */
+        top: 0;
+        right: 0;        /* en 0 para verlo, -250 para ocultarlo para hacer que entre al darle click al menu-icon */
+        transform: translateX(100%);
+        background-color: #fff;
+        width: 300px;
+        height: 100vh;
+        z-index: 2;
+        
+    }
+
+    nav>ul{
+        flex-direction: column;
+    }
+
+    nav>ul>li{
+        margin-top: 30px;
+    }
+
+    nav>ul>li>a{
+        color: #bebebe;
+        font-size: 1.2rem;
+    }
+
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .5);
+        display: none; /* ocultamos para hacer el menu-icon */
+        z-index: 1;
+    }
+
+    #btn_menu{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        position: absolute; /* para poder moverlo a la izq, con relative no se pudo */
+        right: 0;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, .1);
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+        border-radius: 50%;
+        transition: all 300ms;
+        z-index: 1;
+    }
+
+    #btn_menu:hover{
+        background-color: rgba(255, 255, 255, .2);
+    }
+
+    /* ENCABEZADO */
+
+    .encabezado{
+        padding: 5rem 20px;
+    }
+
+    .encabezado .encabezado-info{
+        width: 75%;
+    }
+
+    .encabezado .encabezado-info p{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+
+    .encabezado-info__experiencia{
+        width: 55%;
+    }
+
+    .encabezado-info__iconos{
+        width: 50%;
+    }
+
+    /* lado derecho */
+
+    .encabezado-imagen{
+        background-image: url(Vectores/Rectangle\ 33-1.svg);
+        width: 60%;
+        height: 400px;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .encabezado-imagen img{
+        width: 100%;
+        top: 50%;
+    }
+
+    /* sobre mi */
+
+    .sobreMi{
+        padding: 30px 20px;
+    }
+
+    .sobreMi p{
+        font-size: 1.5rem;
+    }
+
+    .sobreMi-estudios{
+        width: 80%;
+    }
+
+    /* EXPERIENCIA */
+
+    .experiencia{
+        padding-top: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        
+    }
+
+   .experiencia-container1>div{
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .experiencia-container1>div>div{
+        width: 150px;
+    }
+
+    .experiencia .experiencia-container1 img{
+        width: 120px;
+    }
+    /* arreglando los margenes que puse antes */
+    .experiencia__1>div{
+        margin-left: 0;
+    }
+    
+    .experiencia__2>div{
+        margin-left: 0;
+    }
+
+    .experiencia__2>span{
+        margin-right: 0;
+    }
+    
+    .experiencia__3>span{
+        margin-right: 0;
+    }
+
+    .experiencia .experiencia-container1>div{
+        padding: 10px;
+    }
+
+    .experiencia__2>div{
+        margin-left: -12px;
+    }
+
+    /* HABILIDADES */
+    .habilidades{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .habilidades img{
+        height: 100%;
+        object-fit: cover;
+        width: 30%;
+    }
+
+    .habilidades h3{
+        margin-left: 0px;
+        
+    }
+
+    .habilidades .habilidades-info{
+        width: 80%;
+        margin: auto;
+    }
+
+    .habilidades-info__nombre{
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+
+    .habilidades-info__porcentaje{
+        margin-left: -20px;
+    }
+
+    /* PORTAFOLIO - SLIDER */
+
+
+    /* CONTACTO */
+    footer>h3{
+        padding-bottom: 0;
+    }
+
+    .contacto{
+        width: 100%;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+
+    .contacto>div{
+        padding: 0;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .contacto img{
+        width: 100px;
+    }
+
+    .contacto>div>p{
+        font-size: 1.3rem;
+    }
+    
+
 }
