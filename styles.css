@@ -153,11 +153,12 @@ h3{
 }
 
 .experiencia{
-    width: 70%;
+    width: 90%;
     margin: auto;
     padding: 50px;
     display: flex;
     color: #fff;
+    max-width: 800px;
 }
 
 .experiencia>.experiencia-container1{
@@ -170,7 +171,7 @@ h3{
 
 .experiencia .experiencia-container1>div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px;
 }
 
@@ -193,6 +194,11 @@ h3{
 .experiencia-container1>div>span{
     align-self: center;
     font-weight: bold;
+}
+
+.experiencia-container1>div>img{
+    flex-basis: 100px;
+    margin-right: 30px;
 }
 
 .experiencia__2>span{
