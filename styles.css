@@ -14,6 +14,7 @@ html{
     background-color: #1f1d2c;
     height: 100%;
     position: relative;
+    font-size: 1.3rem;;
 }
 
 /* NAV */
@@ -23,8 +24,14 @@ html{
 }
 
 nav{
-    padding-top: 40px;
-    padding-right: 50px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #1f1d2c;
+    z-index: 1000;
+    height: calc(100vh-70px);
 }
 
 nav>ul{
@@ -51,7 +58,8 @@ nav>ul>li>a{
 .encabezado{
     width: 100%;
     margin: auto;
-    padding: 150px;
+    padding: 150px 150px 150px;
+    margin-bottom: 3rem;
 }
 
 /* lado izquierdo, texto */
@@ -91,17 +99,19 @@ h1{
 /* lado derecho, imagen */
 
 .encabezado-imagen img{
-    width: 500px;
+    width: 90%;
     position: relative;
-    top: 300px;
+    top: 30%;
+    max-width: 600px;
 }
 
 .encabezado-imagen{
     background-image: url(Vectores/Rectangle\ 33.svg);
     width: 55%;
-    height: 650px;
+    max-height: 600px;
+    height: 90%;
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     text-align: center;
     z-index: 0;
@@ -319,6 +329,76 @@ footer>p{
 }
 
 
+
+
+@media screen and (max-width:1000px) {
+
+
+    nav>ul>li>a{
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .encabezado{
+        padding: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    
+    .encabezado .encabezado-info p{
+        font-size: 2rem;
+    }
+
+    .encabezado-imagen img{
+        top: 20%;
+    }
+    
+    .encabezado-imagen{
+        max-height: 450px;
+        height: 70%;
+    }
+
+    .encabezado-info__iconos{
+        justify-content: space-around;
+    }
+    
+    .encabezado-info__iconos img{
+        width: 35px;
+    }
+
+    .sobreMi{
+        padding: 2rem 2rem;
+        margin-top: 150px;
+    }
+
+    .experiencia{
+        width: 100%;
+    }
+
+    .portafolio{
+        width:95%;
+        padding:.5em;
+        margin: auto;
+    }
+    
+    .portafolio-elementos{
+        width: 90%;
+        margin: auto;
+        padding:1em;
+        gap: 2em;
+    }
+    
+    .portafolio-contenedor{
+        min-height: 10vh;
+        width: 50%;
+    }
+
+
+}
+
 /* RESPONSIVE 600PX */
 
 @media screen and (max-width:600px) {
@@ -365,7 +445,7 @@ footer>p{
         width: 50px;
         height: 50px;
         display: flex;
-        position: absolute; /* para poder moverlo a la izq, con relative no se pudo */
+        position: fixed; /* para poder moverlo a la izq, con relative no se pudo */
         right: 0;
         margin: 10px;
         justify-content: center;
@@ -386,7 +466,7 @@ footer>p{
     /* ENCABEZADO */
 
     .encabezado{
-        padding: 5rem 20px;
+        padding: 5rem 20px 2rem;
     }
 
     .encabezado .encabezado-info{
@@ -394,7 +474,7 @@ footer>p{
     }
 
     .encabezado .encabezado-info p{
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-bottom: 20px;
         width: 80%;
     }
@@ -422,17 +502,18 @@ footer>p{
 
     .encabezado-imagen img{
         width: 100%;
-        top: 50%;
+        top: 40%;
     }
 
     /* sobre mi */
 
     .sobreMi{
         padding: 30px 20px;
+        margin-top: 3rem;
     }
 
     .sobreMi p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .sobreMi-estudios{
@@ -536,7 +617,7 @@ footer>p{
         transform: translateX(0%);
     }
     .portafolio-contenedor{
-        width: calc( 100% / 3  - 2em);
+        width: calc( 100% / 3  - 3em);
         min-height: 10vh;
     }
 
@@ -586,6 +667,98 @@ footer>p{
     .contacto>div>p{
         font-size: 1.3rem;
     }
-    
+}
 
+@media screen and (max-width:400px){
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 1.9rem;
+    }
+
+    .encabezado .encabezado-info p{
+        font-size: 1rem;
+    }
+
+    .encabezado-imagen img{
+        top: 30%;
+    }
+    
+    .encabezado-imagen{
+        height: 300px;
+    }
+
+    .sobreMi{
+        padding: 20px 20px;
+    }
+
+    .sobreMi>p{
+        text-align: justify;
+    }
+
+    .sobreMi-estudios{
+        width: 95%;
+    }
+
+    .sobreMi-estudios>div>img{
+        width: 140px;
+    }
+
+    #experiencia{
+        font-size: 1.9rem;
+    }
+
+    .experiencia{
+        width: 95%;
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .experiencia-container1>div>img{
+        flex-basis: 20px;
+        margin-right: 10px;
+    }
+
+    .habilidades-info__nombre{
+        font-size: 1.2rem;
+    }
+
+    .habilidades .habilidades-info .habilidades-info__porcentaje,
+    .habilidades .habilidades-info .habilidades-info__nombre{
+        padding: 0 10px;
+    }
+    
+    .habilidades .habilidades-info .habilidades-info__porcentaje>p{
+        font-size: 40px;
+    }
+
+    .portafolio{
+        width:95%;
+        padding:1em;
+    }
+    .portafolio-elementos{
+        padding:1em;
+    }
+
+    .portafolio-contenedor{
+        width: calc( 100% / 3  - 2em);
+        min-height: 15vh;
+    }
+
+
+    .portafolio-puntos .punto{
+        width:  1.5em;
+        height: 1.5em;
+    }
+
+    .contacto>div>p{
+        font-size: 1rem;
+    }
+
+    .contacto>div>span{
+        font-size: .9rem;
+    }
 }
