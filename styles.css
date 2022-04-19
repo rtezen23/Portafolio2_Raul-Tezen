@@ -334,7 +334,11 @@ footer>p{
     padding: 50px;
 }
 
-
+@media screen and (max-width:1200px) {
+    .encabezado{
+        padding-left: 50px;
+    }
+}
 
 
 @media screen and (max-width:1000px) {
@@ -347,7 +351,7 @@ footer>p{
 
     .encabezado{
         padding: 1.5rem;
-        padding-top: 2.5rem;
+        padding-top: 3.5rem;
     }
 
     h1{
